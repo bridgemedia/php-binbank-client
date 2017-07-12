@@ -5,9 +5,21 @@
 PHP >= 7.0.0
 
 ## Установка
-Включить файл класса
+Задать настройки мерчанта в конструкторе класса
 ```
-include '';
+$this->setToken('ТОКЕН');
+$this->setKey('КЛЮЧ ШИФРОВАНИЯ');
+$this->setCurrency('RUB');
+$this->setMerchantName('НАЗВАНИЕ МАГАЗИНА');
+$this->setCallbackUrl('https://АДРЕС ОБРАТНОГО ВЫЗОВА (CALLBACK)');
+$this->setReturnUrl('https://АДРЕС ПЕРЕНАПРАВЛЕНИЯ ПОСЛЕ ОПЛАТЫ');
+$this->setApiUrl('https://АДРЕС API');
+$this->setTimezone('Europe/Moscow');
+```
+
+Включить файл класса в свой проект
+```
+require_once 'Payment__binbank.class.php';
 ```
 
 ## Использование
@@ -21,7 +33,7 @@ $Payment
   ->setDescripton( 'Тестовое описание' ) //необязательно
   ->drawButton();
 ```
-### Обработать обратный запрос от банка
+### Обработать обратный запрос от банка по адресу, заданному в $this->setCallbackUrl('https://АДРЕС ОБРАТНОГО ВЫЗОВА (CALLBACK)');
 ```
 $Payment->processCallback();
 ```

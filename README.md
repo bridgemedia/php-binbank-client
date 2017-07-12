@@ -33,7 +33,8 @@ $Payment
   ->setDescripton( 'Тестовое описание' ) //необязательно
   ->drawButton();
 ```
-### Обработать обратный запрос от банка по адресу, заданному в $this->setCallbackUrl('https://АДРЕС ОБРАТНОГО ВЫЗОВА (CALLBACK)');
+### Обработать обратный запрос от банка
+по адресу, заданному в $this->setCallbackUrl('АДРЕС ОБРАТНОГО ВЫЗОВА (CALLBACK)');
 ```
 $Payment->processCallback();
 ```

@@ -23,6 +23,6 @@ $Payment
 ```
 ### Обработать обратный запрос от банка
 ```
-$Payment->processCallback( $_POST );
+$Payment->processCallback();
 ```
 

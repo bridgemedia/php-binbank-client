@@ -12,7 +12,7 @@ include '';
 
 ## Использование
 ### Кнопка "Оплатить"
-````
+```
 $Payment = new Payment__binbank();
 
 $Payment

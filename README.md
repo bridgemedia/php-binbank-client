@@ -34,7 +34,7 @@ $Payment
   ->drawButton();
 ```
 ### Обработать обратный запрос от банка
-по адресу, заданному в $this->setCallbackUrl('АДРЕС ОБРАТНОГО ВЫЗОВА (CALLBACK)');
+по адресу, заданному в $this->setCallbackUrl('');
 ```
 $Payment->processCallback();
 ```

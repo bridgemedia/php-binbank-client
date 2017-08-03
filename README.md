@@ -13,7 +13,7 @@ $this->setToken('ТОКЕН');
 $this->setKey('КЛЮЧ ШИФРОВАНИЯ');
 $this->setCurrency('RUB');
 $this->setMerchantName('НАЗВАНИЕ МАГАЗИНА');
-$this->setCallbackUrl('https://АДРЕС ОБРАТНОГО ВЫЗОВА (CALLBACK)');
+$this->setCallbackUrl('https://АДРЕС ОБРАТНОГО ВЫЗОВА - CALLBACK');
 $this->setReturnUrl('https://АДРЕС ПЕРЕНАПРАВЛЕНИЯ ПОСЛЕ ОПЛАТЫ');
 $this->setApiUrl('https://АДРЕС API');
 $this->setTimezone('Europe/Moscow');
@@ -47,5 +47,5 @@ $Payment
 ```
 $Payment->processCallback();
 ```
-по адресу, заданному в $this->setCallbackUrl('https : //АДРЕС ОБРАТНОГО ВЫЗОВА (CALLBACK)');
+по адресу, заданному в $this->setCallbackUrl('https : //АДРЕС ОБРАТНОГО ВЫЗОВА - CALLBACK');
 

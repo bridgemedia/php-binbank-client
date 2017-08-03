@@ -1,0 +1,17 @@
+/* payment btn */
+.btn__payment {
+  text-align: left;
+  cursor: pointer;
+
+  background-color: #fff;
+  color: #000;
+  border-radius: 6px;
+
+  &__label {
+    display: block;
+    padding: 0;
+    margin-bottom: 3px;
+  }
+
+}
+/* /payment btn */

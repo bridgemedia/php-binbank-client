@@ -32,7 +32,7 @@ $Payment = new Payment__binbank();
 //$Payment->setDebugOn();
 
 $Payment
-  ->setOrderId( 'тестовый платёж #'.$test_num ) //строка - номер платежа
+  ->setOrderId( 'тестовый платёж' ) //строка - идентификатор платежа
   ->setAmountSum( 100 ) //сумма в рублях
   ->setDescripton( 'Тестовое описание' ) //необязательно
   ->drawButton();

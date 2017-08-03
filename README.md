@@ -1,5 +1,6 @@
 # php-binbank-client
-Класс PHP для онлайн-оплаты через "БИНБАНК" ( www.binbank.ru )
+Класс PHP для онлайн-оплаты через интернет-эквайринг "БИНБАНК" 
+https://www.binbank.ru/corporate-clients/e-commerce/internet-acquiring/
 
 ## Требования
 PHP >= 7.0.0

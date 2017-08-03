@@ -21,7 +21,7 @@ $this->setApiUrl('https://АДРЕС API');
 $this->setTimezone('Europe/Moscow');
 ```
 
-Включить php файл класса в свой проект
+Включить файл класса [Payment__binbank.class.php](/Payment__binbank.class.php) в свой проект
 ```
 require_once 'Payment__binbank.class.php';
 ```

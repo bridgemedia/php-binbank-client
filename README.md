@@ -8,6 +8,10 @@
 и CSS в этом примере для Bootstrap 3, но вы можете заменить стили на свои.
 
 ## Установка
+Включить файл класса [Payment__binbank.class.php](/Payment__binbank.class.php) в свой проект
+```
+require_once 'Payment__binbank.class.php';
+```
 Задать настройки мерчанта в конструкторе класса.  
 Рабочие настройки мерчанта выдаст ваш менеджер, а тестовые включены в файл.
 ```
@@ -19,11 +23,6 @@ $this->setCallbackUrl('https://АДРЕС ОБРАТНОГО ВЫЗОВА - CALL
 $this->setReturnUrl('https://АДРЕС ПЕРЕНАПРАВЛЕНИЯ ПОСЛЕ ОПЛАТЫ');
 $this->setApiUrl('https://АДРЕС API');
 $this->setTimezone('Europe/Moscow');
-```
-
-Включить файл класса [Payment__binbank.class.php](/Payment__binbank.class.php) в свой проект
-```
-require_once 'Payment__binbank.class.php';
 ```
 Подключить стиль SCSS [button_style.scss](/button_style.scss),  
 указать путь к [логотипу Бинбанка](/binbank_lil_logo.png) для отображения кнопки

@@ -19,10 +19,11 @@ $this->setApiUrl('https://АДРЕС API');
 $this->setTimezone('Europe/Moscow');
 ```
 
-Включить файл класса в свой проект
+Включить php файл класса в свой проект
 ```
 require_once 'Payment__binbank.class.php';
 ```
+Подключить стиль SCSS [button_style.scss](/button_style.scss) и указать в нём путь к [логотипу Бинбанка](/binbank_lil_logo.png) для отображения кнопки
 
 ## Использование
 ### Кнопка "Оплатить"

@@ -43,8 +43,9 @@ $Payment
 ![Screenshot](/screenshot.png)
 
 ### Обработать обратный запрос от банка
-по адресу, заданному в $this->setCallbackUrl('');
+Запустите:
 ```
 $Payment->processCallback();
 ```
+по адресу, заданному в $this->setCallbackUrl('https : //АДРЕС ОБРАТНОГО ВЫЗОВА (CALLBACK)');
 

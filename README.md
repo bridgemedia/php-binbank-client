@@ -1,10 +1,11 @@
 # php-binbank-client
-Класс PHP для онлайн-оплаты через интернет-эквайринг "БИНБАНК" [www.binbank.ru](https://www.binbank.ru/corporate-clients/e-commerce/internet-acquiring/)
+Класс PHP для онлайн-оплаты через интернет-эквайринг "БИНБАНК"  
+[www.binbank.ru](https://www.binbank.ru/corporate-clients/e-commerce/internet-acquiring/)
 
 
 ## Требования
 Версия PHP >= 7.0,  
-и CSS в этом примере для Bootstrap 3, но вы можете заменить их на свои.
+и CSS в этом примере для Bootstrap 3, но вы можете заменить стили на свои.
 
 ## Установка
 Задать настройки мерчанта в конструкторе класса.  
@@ -24,7 +25,8 @@ $this->setTimezone('Europe/Moscow');
 ```
 require_once 'Payment__binbank.class.php';
 ```
-Подключить стиль SCSS [button_style.scss](/button_style.scss) и указать в нём путь к [логотипу Бинбанка](/binbank_lil_logo.png) для отображения кнопки
+Подключить стиль SCSS [button_style.scss](/button_style.scss),  
+указать путь к [логотипу Бинбанка](/binbank_lil_logo.png) для отображения кнопки
 
 ## Использование
 ### Кнопка "Оплатить"
@@ -51,3 +53,6 @@ $Payment->processCallback();
 ```
 по адресу на вашем сайте, заданному в $this->setCallbackUrl('https : //АДРЕС ОБРАТНОГО ВЫЗОВА - CALLBACK');
 
+## Поддержка
+По этому PHP скрипту -- [прямо на GitHub](https://github.com/bridgemedia/php-binbank-client/issues)  
+Поддержка БИНБАНК -- [www.binbank.ru/contacts](https://www.binbank.ru/contacts/)

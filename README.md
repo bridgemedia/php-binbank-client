@@ -27,7 +27,7 @@ require_once 'Payment__binbank.class.php';
 ```
 $Payment = new Payment__binbank();
 
-//Чтобы включить дебаг:
+//Чтобы включить отладку:
 //$Payment->setDebugOn();
 
 $Payment

@@ -34,7 +34,7 @@ $Payment = new Payment__binbank();
 
 $Payment
   ->setOrderId( 'тестовый платёж' ) //строка - идентификатор платежа
-  ->setAmountSum( 91 ) //сумма в рублях
+  ->setAmountSum( 91 ) //сумма в рублях, без копеек
   ->setDescripton( 'Тестовое описание' ) //необязательно
   ->drawButton();
 ```

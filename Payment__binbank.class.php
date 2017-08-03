@@ -8,9 +8,7 @@
  * Версия PHP -- от 7.0
  *
  */
-//class Payment {}
-
-class Payment__binbank extends Payment
+class Payment__binbank
 {
 
 	private $_token;

@@ -234,7 +234,7 @@ class Payment__binbank
 	 * @param string $string
 	 */
 	private function log(string $string ){
-		if( !file_put_contents( '/home/bridgemedia/sites/bridgemedia.ru/sys/modules/payment/callback_log.txt', print_r( $string, true )."\n\n", FILE_APPEND ) ){
+		if( !file_put_contents( '/var/log/binbank/callback_log.txt', print_r( $string, true )."\n\n", FILE_APPEND ) ){
 			$this->debug_echo( 'Предупреждение: не удалось записать файл журнала оплаты' );
 		}
 	}

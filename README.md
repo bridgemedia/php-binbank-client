@@ -27,6 +27,9 @@ require_once 'Payment__binbank.class.php';
 ```
 $Payment = new Payment__binbank();
 
+//Чтобы включить дебаг:
+//$Payment->setDebugOn();
+
 $Payment
   ->setOrderId( 'тестовый платёж #'.$test_num ) //строка - номер платежа
   ->setAmountSum( 100 ) //сумма в рублях

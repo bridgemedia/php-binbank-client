@@ -1,8 +1,3 @@
--- phpMyAdmin SQL Dump
--- version 4.6.4
--- https://www.phpmyadmin.net/
---
--- Хост: localhost
 -- Время создания: Авг 04 2017 г., 14:17
 -- Версия сервера: 5.7.14-8
 -- Версия PHP: 7.1.8
@@ -15,10 +10,6 @@ SET time_zone = "+00:00";
 /*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
 /*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
 /*!40101 SET NAMES utf8mb4 */;
-
---
--- База данных: `bridgemedia`
---
 
 -- --------------------------------------------------------
 

@@ -55,6 +55,7 @@ $Payment->processCallback();
 в методе processCallback() в файле [Payment__binbank.class.php](/Payment__binbank.class.php) добавьте нужную вам обработку обратного запроса.
 
 ## Поддержка
+[Документация API](/OWS-MdmPayWebAPI1.2-110417-1700-64.pdf), свежую версию ищите на [сайте БИНБАНК](https://www.binbank.ru/corporate-clients/e-commerce/internet-acquiring/#b1v4)
 По этому скрипту -- [пишите на GitHub](https://github.com/bridgemedia/php-binbank-client/issues)  
 Поддержка БИНБАНК -- [www.binbank.ru/contacts](https://www.binbank.ru/contacts/)
   

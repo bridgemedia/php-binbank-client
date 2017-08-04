@@ -226,6 +226,15 @@ class Payment__binbank
 		$transaction_is_success = ( $callback['status']['type'] == 'success' );
 
 		//В зависимости от статуса и свойства транзакции присваем ей вес в своей системе и обрабатываем дальше
+		//Например, создайте MySQL таблицу из файла https://github.com/bridgemedia/php-binbank-client/blob/master/mysql%20-%20sys_payment.sql и выполните запрос (где $db -- указатель на PDO соединение): 
+		$sql = "INSERT INTO `sys_payment` SET
+			 `payment:amount` = ".(int)$callback['amount']['value'].",
+			 `payment:order_id` = ".$db->quote( $callback['order_id'] ).",
+			 `payment:callback_status` = ".$db->quote( $callback['status']['type'] ).",
+			 `payment:card` = ".$db->quote( ' ' . $callback['source_card']['bank_name'] .', ' . $callback['source_card']['payment_system'] .' ' . $callback['source_card']['masked_number'] ).",
+			 `payment:transaction` = ".$db->quote( 'Код транзакции: '.$callback['ref_set']['auth_code'] . ', Реф. номер: '.$callback['ref_set']['ret_ref_number'] ).",
+			 `payment:callback` = ".$db->quote( json_encode( $callback ) )."
+		";
 
 	}
 

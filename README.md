@@ -1,5 +1,5 @@
 # php-binbank-client
-Класс PHP для онлайн-оплаты через интернет-эквайринг "БИНБАНК"  
+Класс PHP клиента для онлайн-оплаты через интернет-эквайринг "БИНБАНК" для интернет-магазинов  
 [www.binbank.ru](https://www.binbank.ru/corporate-clients/e-commerce/internet-acquiring/)
 
 
@@ -8,7 +8,7 @@
 и CSS в этом примере для Bootstrap 3, но вы можете заменить стили на свои.
 
 ## Установка
-Включить файл класса [Payment__binbank.class.php](/Payment__binbank.class.php) в свой проект
+Включить PHP файл класса [Payment__binbank.class.php](/Payment__binbank.class.php) в свой проект
 ```
 require_once 'Payment__binbank.class.php';
 ```
@@ -50,8 +50,9 @@ $Payment
 ```
 $Payment->processCallback();
 ```
-по адресу на вашем сайте, заданному в $this->setCallbackUrl('https : //АДРЕС ОБРАТНОГО ВЫЗОВА - CALLBACK');
+по адресу на вашем сайте, заданному при [установке](#Установка) в $this->setCallbackUrl('АДРЕС ОБРАТНОГО ВЫЗОВА');  
+в методе processCallback() в файле [Payment__binbank.class.php](/Payment__binbank.class.php) добавьте нужную вам обработку обратного запроса.
 
 ## Поддержка
-По этому PHP скрипту -- [прямо на GitHub](https://github.com/bridgemedia/php-binbank-client/issues)  
+По этому скрипту -- [пишите на GitHub](https://github.com/bridgemedia/php-binbank-client/issues)  
 Поддержка БИНБАНК -- [www.binbank.ru/contacts](https://www.binbank.ru/contacts/)

@@ -29,18 +29,10 @@ CREATE TABLE `sys_payment` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Индексы сохранённых таблиц
---
-
---
 -- Индексы таблицы `sys_payment`
 --
 ALTER TABLE `sys_payment`
   ADD PRIMARY KEY (`payment:id`);
-
---
--- AUTO_INCREMENT для сохранённых таблиц
---
 
 --
 -- AUTO_INCREMENT для таблицы `sys_payment`

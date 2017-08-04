@@ -59,7 +59,7 @@ $Payment
 $Payment->processCallback();
 ```
 по адресу на вашем сайте, заданному при [установке](#Установка) в $this->setCallbackUrl('АДРЕС ОБРАТНОГО ВЫЗОВА');  
-в методе processCallback() в файле [Payment__binbank.class.php](/Payment__binbank.class.php) добавьте нужную вам обработку обратного запроса.
+в методе processCallback() в файле [Payment__binbank.class.php](/Payment__binbank.class.php) добавьте нужную вам обработку обратного запроса. Например, для сохранения информации о транзакциях создайте MySQL таблицу из файла [/mysql - sys_payment.sql](/mysql%20-%20sys_payment.sql) и выполните запрос, содержащийся в методе setCallbackUrl.
 
 ## Поддержка
 * [Документация API](/OWS-MdmPayWebAPI1.2-110417-1700-64.pdf), свежую версию ищите на [сайте БИНБАНК](https://www.binbank.ru/corporate-clients/e-commerce/internet-acquiring/#b1v4)  

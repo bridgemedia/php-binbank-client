@@ -32,9 +32,10 @@ $this->setTimezone('Europe/Moscow');
 ```
 $Payment = new Payment__binbank();
 
-//Чтобы включить отладку:
+//Чтобы включить отладку, раскомментируйте:
 //$Payment->setDebugOn();
 
+//Вывести кнопку оплаты:
 $Payment
   ->setOrderId( 'тестовый платёж' ) //строка - идентификатор платежа
   ->setAmountSum( 91 ) //сумма в рублях, без копеек
@@ -45,7 +46,7 @@ $Payment
 
 ![Screenshot](/screenshot.png)
 
-### Обработать обратный запрос от банка
+### Обработка обратного запроса (callback) от БИНБАНКа
 Пропишите обработчик:
 ```
 $Payment->processCallback();
@@ -56,3 +57,9 @@ $Payment->processCallback();
 ## Поддержка
 По этому скрипту -- [пишите на GitHub](https://github.com/bridgemedia/php-binbank-client/issues)  
 Поддержка БИНБАНК -- [www.binbank.ru/contacts](https://www.binbank.ru/contacts/)
+  
+    
+      
+        
+          
+EOF

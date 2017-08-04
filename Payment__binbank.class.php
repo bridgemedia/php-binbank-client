@@ -211,7 +211,7 @@ class Payment__binbank
 			unset( $signature_params['request_card_token'] );
 			unset( $signature_params['recurring'] );
 			unset( $signature_params['signature'] );
-		//TODO: инвертировать unset ненужных полей на сохранение нужных, иначе будет ошибка при добавлении полей
+		//TODO: инвертировать unset ненужных полей на сохранение нужных, иначе в будущем возможна ошибка при добавлении полей в API (сейчас работает)
 		
 		$signature_params = $this->serealise_params( $signature_params );
 		$this->log( $signature_params );

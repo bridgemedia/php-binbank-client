@@ -55,23 +55,21 @@ $Payment
 
 ### Обработка обратного запроса (callback) от БИНБАНКа
 После совершения платежа (успешного или нет), банк отправляет вам информацию о транзакции POST-запросом на адрес, указанный при [установке](#Установка) в $this->setCallbackUrl('АДРЕС ОБРАТНОГО ВЫЗОВА');  
-Пропишите обработчик:
+  
+Пропишите по этому адресу обработчик:
 ```
 $Payment = new Payment__binbank();  
 $Payment->processCallback();
 ```
-по адресу на вашем сайте, заданному при [установке](#Установка) в $this->setCallbackUrl('АДРЕС ОБРАТНОГО ВЫЗОВА');  
 Затем в методе processCallback() в файле [Payment__binbank.class.php](/Payment__binbank.class.php) добавьте нужную вам обработку обратного запроса.  
   
-Например, для сохранения информации о транзакциях создайте MySQL таблицу из файла [mysql - sys_payment.sql](/mysql%20-%20sys_payment.sql) и поставьте на выполнение SQL запрос, содержащийся в методе setCallbackUrl.
+Например, для сохранения информации о транзакциях создайте MySQL таблицу из файла [mysql - sys_payment.sql](/mysql%20-%20sys_payment.sql) и поставьте на выполнение к вашей БД SQL запрос, содержащийся в методе setCallbackUrl.
 
 ## Поддержка
 * [Документация API](/OWS-MdmPayWebAPI1.2-110417-1700-64.pdf) (раздел WEB HTML), свежую версию ищите на [сайте БИНБАНК](https://www.binbank.ru/corporate-clients/e-commerce/internet-acquiring/#b1v4)  
 * По этому скрипту -- [пишите на GitHub](https://github.com/bridgemedia/php-binbank-client/issues)  
-* Поддержка БИНБАНК -- [www.binbank.ru/contacts](https://www.binbank.ru/contacts/)
+* Поддержка БИНБАНК -- [www.binbank.ru/contacts](https://www.binbank.ru/contacts/)  
   
-    
-      
-        
-          
+  
+  
 EOF

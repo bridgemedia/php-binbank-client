@@ -20,7 +20,7 @@ $this->setKey('КЛЮЧ ШИФРОВАНИЯ');
 $this->setCurrency('RUB');
 $this->setMerchantName('НАЗВАНИЕ МАГАЗИНА');
 $this->setCallbackUrl('https://АДРЕС ОБРАТНОГО ВЫЗОВА - CALLBACK');
-$this->setReturnUrl('https://АДРЕС ПЕРЕНАПРАВЛЕНИЯ ПОСЛЕ ОПЛАТЫ');
+$this->setReturnUrl('https://АДРЕС ПЕРЕНАПРАВЛЕНИЯ "Вернуться в магазин" ПОСЛЕ ОПЛАТЫ');
 $this->setApiUrl('https://АДРЕС API');
 $this->setTimezone('Europe/Moscow');
 ```

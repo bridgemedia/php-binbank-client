@@ -1,8 +1,8 @@
 # php-binbank-client
 Класс PHP клиента для онлайн-оплаты через интернет-эквайринг "БИНБАНК" для интернет-магазинов  
 [www.binbank.ru](https://www.binbank.ru/corporate-clients/e-commerce/internet-acquiring/)
-
-
+  
+  
 ## Требования
 Версия PHP >= 7.0,  
 и CSS в этом примере для Bootstrap 3, но вы можете заменить стили на свои.
@@ -12,7 +12,7 @@
 ```
 require_once 'Payment__binbank.class.php';
 ```
-Задать настройки мерчанта в конструкторе класса 
+Задать настройки мерчанта в конструкторе класса  
 (рабочие настройки выдаст ваш менеджер, а тестовые включены в файл):
 ```
 $this->setToken('ТОКЕН');
@@ -25,7 +25,7 @@ $this->setApiUrl('https://АДРЕС API');
 $this->setTimezone('Europe/Moscow');
 ```
 Подключить стиль SCSS [button_style.scss](/button_style.scss),  
-указать путь к [логотипу Бинбанка](/binbank_lil_logo.png) для отображения кнопки
+указать путь к [логотипу Бинбанка](/binbank_lil_logo.png) для отображения на кнопке
 
 ## Использование
 ### Кнопка "Оплатить"

@@ -1,14 +1,14 @@
 # php-binbank-client
-Класс PHP клиента для онлайн-оплаты через интернет-эквайринг "БИНБАНК" для интернет-магазинов  
+Класс PHP клиента онлайн-оплаты через интернет-эквайринг "БИНБАНК" для интернет-магазинов  
 [www.binbank.ru](https://www.binbank.ru/corporate-clients/e-commerce/internet-acquiring/)
   
   
 ## Требования
 Версия PHP >= 7.0,  
-и CSS в этом примере для Bootstrap 3, но вы можете заменить стили на свои.
+и CSS в этом примере для Bootstrap 3, но вы можете заменить стили на свои
 
 ## Установка
-Включить PHP файл класса [Payment__binbank.class.php](/Payment__binbank.class.php) в свой проект
+Включить PHP файл класса [Payment__binbank.class.php](/Payment__binbank.class.php) в свой проект:
 ```
 require_once 'Payment__binbank.class.php';
 ```
@@ -24,8 +24,9 @@ $this->setReturnUrl('https://АДРЕС ПЕРЕНАПРАВЛЕНИЯ "Верн
 $this->setApiUrl('https://АДРЕС API');
 $this->setTimezone('Europe/Moscow');
 ```
+Указать путь к [логотипу Бинбанка](/binbank_lil_logo.png) для отображения на кнопке  
 Подключить стиль SCSS [button_style.scss](/button_style.scss),  
-указать путь к [логотипу Бинбанка](/binbank_lil_logo.png) для отображения на кнопке
+
 
 ## Использование
 ### Кнопка "Оплатить"

@@ -26,8 +26,9 @@ $this->setReturnUrl('https://АДРЕС ПЕРЕНАПРАВЛЕНИЯ НА ВА
 $this->setApiUrl('https://АДРЕС API');
 $this->setTimezone('Europe/Moscow');
 ```
-Указать путь к [логотипу Бинбанка](/binbank_lil_logo.png) для отображения на кнопке  
 Подключить стиль SCSS [button_style.scss](/button_style.scss),  
+Указать в нём путь к [логотипу Бинбанка](/binbank_lil_logo.png) для отображения на кнопке  
+
 
 
 ## Использование

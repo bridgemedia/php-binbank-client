@@ -7,7 +7,7 @@
   
 ## Требования
 Версия PHP >= 7.0,  
-и CSS в этом примере для Bootstrap 3, но вы можете легко заменить стили на свои
+SCSS в этом примере для Bootstrap 3, но вы можете легко заменить стили на свои.
 
 ## Установка
 Включить PHP файл класса [Payment__binbank.class.php](/Payment__binbank.class.php) в свой проект:
@@ -28,7 +28,7 @@ $this->setTimezone('Europe/Moscow');
 ```
 Подключить стиль SCSS [button_style.scss](/button_style.scss), 
  
-Указать путь к [логотипу Бинбанка](/binbank_lil_logo.png) для отображения на кнопке  
+Указать путь к [логотипу Бинбанка](/binbank_lil_logo.png) для отображения на кнопке.
 
 
 

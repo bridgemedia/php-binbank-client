@@ -68,7 +68,7 @@ $Payment->processCallback();
 ```
 Затем в методе processCallback() в файле [Payment__binbank.class.php](/Payment__binbank.class.php) добавьте нужную вам обработку обратного запроса.  
   
-Например, для сохранения информации о транзакциях, создайте MySQL таблицу из файла [mysql - sys_payment.sql](/mysql%20-%20sys_payment.sql) и поставьте на выполнение к вашей БД SQL запрос, содержащийся в методе processCallback
+Например, для сохранения информации о транзакциях, создайте MySQL таблицу из файла [mysql - sys_payment.sql](/mysql%20-%20sys_payment.sql) и поставьте на выполнение к вашей БД SQL-запрос, уже содержащийся в методе processCallback.
 
 ## Поддержка
 * [Документация API](/OWS-MdmPayWebAPI1.2-110417-1700-64.pdf) (раздел WEB HTML), свежую версию ищите на [сайте БИНБАНК](https://www.binbank.ru/corporate-clients/e-commerce/internet-acquiring/#b1v4)

@@ -1,6 +1,5 @@
 # php-binbank-client
-Класс PHP клиента онлайн-оплаты через интернет-эквайринг банка ОТКРЫТИЕ (бывший "БИНБАНК") для интернет-магазинов  
-[www.binbank.ru](https://www.binbank.ru/corporate-clients/e-commerce/internet-acquiring/)
+Класс PHP клиента онлайн-оплаты через интернет-эквайринг банка ОТКРЫТИЕ (бывший "БИНБАНК") [www.binbank.ru](https://www.binbank.ru/corporate-clients/e-commerce/internet-acquiring/)
 
 И запрос на платёж, и обратный запрос от банка подписаны цифровой подписью для шифрования.
   

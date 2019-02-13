@@ -73,6 +73,3 @@ $Payment->processCallback();
 ## Поддержка
 * [Документация API](/OWS-MdmPayWebAPI1.2-110417-1700-64.pdf) (раздел WEB HTML), свежую версию ищите на [сайте БИНБАНК](https://www.binbank.ru/corporate-clients/e-commerce/internet-acquiring/#b1v4)
 * Поддержка БИНБАНК -- [www.binbank.ru/contacts](https://www.binbank.ru/contacts/)  
-* По этому скрипту -- бесплатно [пишите на GitHub](https://github.com/bridgemedia/php-binbank-client/issues)
-* А на коммерческой основе можете обратиться [к нам](https://bridgemedia.ru/about/contacts/)
-* или [www.babak.ru](http://www.babak.ru)
